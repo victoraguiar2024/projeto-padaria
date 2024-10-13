@@ -1,0 +1,148 @@
+/* Reset de estilos básicos */
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #9b4c02e5; 
+    background-image: url('imagens/pizzaria.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    font-family: comic sans;
+}
+
+/* Ajustes para o cabeçalho */
+#header {
+    background-color: red;
+    z-index: 1;
+    padding: 10px;
+    display: flex; /* Para alinhar a logomarca e o texto horizontalmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+#logo {
+    width: 150px; /* Ajuste o tamanho da logomarca conforme necessário */
+    height: 150px;
+    margin-right: 15px; /* Espaço entre a imagem e o texto */
+}
+
+.header-texto {
+    color: #fff;
+}
+
+#h1-header {
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+}
+
+.h3-header {
+    color: #fff;
+    font-size: 25px;
+    margin: 0;
+    padding-top: 2px;
+    padding-left: 60px;
+}
+
+/* Estilos de navegação */
+.link-cabeçalho {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    margin-right: 10px;
+}
+
+.link-cabeçalho:hover {
+    color: yellow;
+    transition: all ease-in 3ms;
+}
+
+#navegação {
+    word-spacing: 5px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* Estilos das seções */
+.section-1, .section-2, #contato, #endereço {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.section-1 {
+    height: 160px;
+}
+
+.h2-section1, h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.p1, .p-preços, p {
+    font-size: 18px;
+}
+
+/* Estilos do grid de produtos */
+#section-grid {
+    padding: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.sub-grid {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.img-pizza {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.botao-acao {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.botao-acao:hover {
+    background-color: #ff9900;
+}
+
+/* Estilos para o formulário de contato */
+#contato input, #contato textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contato button {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+}
